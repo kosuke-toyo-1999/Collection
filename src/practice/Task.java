@@ -1,10 +1,9 @@
 package practice;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
-import java.util.List;
+
+import practice.SimpleTesing1.DateItem;
 
 public class Task implements Comparable<Task> {
 	private LocalDate date;
@@ -16,11 +15,14 @@ public class Task implements Comparable<Task> {
 	}
 	// compareToメソッドをオーバーライドする
 	// 日付で並び替えるため、LocalDateのcompareToを使う
-
-	@Override
-	public int compareTo(Task t){
+	
+	static class Date implements Comparator<DateItem> {
+        @Override
+	public int compareTo(Task t,Task a){
 		
-		return //比較する内容を実装してください;
+		return t.date.compareTo(a.date);
+				//比較する内容を実装してください;
+        }
 			
 	}
 }

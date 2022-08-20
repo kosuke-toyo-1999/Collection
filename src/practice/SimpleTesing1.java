@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class SimpleTesing1 {
-	static class DateItem {
+    static class DateItem {
         String datetime;
 
         DateItem(String date) {
@@ -32,5 +32,4 @@ public class SimpleTesing1 {
             System.out.println(date.datetime);
         });
     }
-
-}
+}  
