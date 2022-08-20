@@ -1,22 +1,26 @@
 package practice;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
-public class Task {
-	
-	public Task()  {
-		DateTimeFormatter f = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-		LocalDate d1 = LocalDate.parse("2021-10-21", f);
-		LocalDate d2 = LocalDate.parse("2021-9-15", f);
-		LocalDate d3 = LocalDate.parse("2021-12-4", f);
-		LocalDate d4 = LocalDate.parse("2021-8-10", f);
-		LocalDate d5 = LocalDate.parse("2021-11-9", f);
-		
+public class Task implements Comparable<Task> {
+	private LocalDate date;
+	private String task;
 
-		
+	public Task(LocalDate date, String task) {
+		this.date = date;
+		this.task = task;
 	}
-	
-	
+	// compareToメソッドをオーバーライドする
+	// 日付で並び替えるため、LocalDateのcompareToを使う
 
+	@Override
+	public int compareTo(Task t){
+		
+		return //比較する内容を実装してください;
+			
+	}
 }
