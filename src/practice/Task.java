@@ -3,7 +3,6 @@ package practice;
 import java.time.LocalDate;
 import java.util.Comparator;
 
-import practice.SimpleTesing1.DateItem;
 
 public class Task implements Comparable<Task> {
 	private LocalDate date;
@@ -13,10 +12,11 @@ public class Task implements Comparable<Task> {
 		this.date = date;
 		this.task = task;
 	}
+}
 	// compareToメソッドをオーバーライドする
 	// 日付で並び替えるため、LocalDateのcompareToを使う
 	
-	static class Date implements Comparator<DateItem> {
+	static class Date implements Comparator<Task> {
         @Override
 	public int compareTo(Task t,Task a){
 		
@@ -25,4 +25,4 @@ public class Task implements Comparable<Task> {
         }
 			
 	}
-}
+
