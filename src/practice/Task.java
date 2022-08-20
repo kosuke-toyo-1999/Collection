@@ -1,15 +1,14 @@
 package practice;
 
-import java.time.LocalDate;
 import java.util.Comparator;
 
 
 public class Task implements Comparable<Task> {
-	private LocalDate date;
+	private int date;
 	private String task;
 
-	public Task(LocalDate date, String task) {
-		this.date = date;
+	public Task(int i, String task) {
+		this.date = i;
 		this.task = task;
 	}
 }
@@ -17,8 +16,7 @@ public class Task implements Comparable<Task> {
 	// 日付で並び替えるため、LocalDateのcompareToを使う
 	
 	static class Date implements Comparator<Task> {
-        @Override
-	public int compareTo(Task t,Task a){
+	public int compareTo(int t,Task a){
 		
 		return t.date.compareTo(a.date);
 				//比較する内容を実装してください;
