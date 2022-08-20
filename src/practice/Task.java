@@ -13,7 +13,7 @@ public class Task {
 		LocalDate d4 = LocalDate.parse("2021-8-10", f);
 		LocalDate d5 = LocalDate.parse("2021-11-9", f);
 		
-		System.out.println(d1);
+
 		
 	}
 	
