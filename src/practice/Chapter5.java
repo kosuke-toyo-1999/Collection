@@ -14,8 +14,8 @@ public class Chapter5 {
         list.add(new Task(LocalDate.of(2021, 8, 10), "散髪に行く"));
         list.add(new Task(LocalDate.of(2021, 11, 9), "スクールの課題を解く"));
         Collections.sort(list, new Task());
-        List.forEach(date -> {
-            System.out.println(Task);
+        list.forEach(date -> {
+            System.out.println(Task.task);
             
         });
         

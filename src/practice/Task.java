@@ -13,9 +13,10 @@ public class Task implements Comparable<Task> {
 	}
 	
 
-	public int compareTo(Task task) {
+	public int compareTo(Task date) {
 
 		return compareTo(date);
 	}
+}
 
 
