@@ -11,10 +11,11 @@ public class Task implements Comparable<Task> {
 		this.date = date;
 		this.task = task;
 	}
+	
 
-	public int compareTo(LocalDate date) {
+	public int compareTo(Task task) {
 
 		return compareTo(date);
 	}
 
-}
+
