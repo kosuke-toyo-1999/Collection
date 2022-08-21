@@ -1,17 +1,16 @@
 package practice;
 
-import java.util.Comparator;
-
 public class Task implements Comparable<Task> {
 	private int date;
 	private String task;
 
-	public Task(int i, String task) {
-		this.date = i;
+	public Task(int date, String task) {
+		this.date = date;
 		this.task = task;
+	}
 
-	public int compareTo(int t,Task a){
-		return t.Task.compareTo(a.date);
+	public int compareTo(int date_1,int date_2){
+		return date_1.date.compareTo(date_2.Task);
 	}
 
 
