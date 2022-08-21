@@ -13,9 +13,9 @@ public class Task implements Comparable<Task> {
 	// 日付で並び替えるため、LocalDateのcompareToを使う
 	
 	
-	public int compareTo(Task t,Task a){
+	public int compareTo(int a,int b){
 		
-		return t.date.compareTo(a.date);
+		return a.Task.compareTo(b.Task);
 				//比較する内容を実装してください;
         }
 			
