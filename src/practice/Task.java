@@ -1,5 +1,7 @@
 package practice;
 
+import java.util.Comparator;
+
 public class Task implements Comparable<Task> {
 	private int date;
 	private String task;
@@ -7,17 +9,10 @@ public class Task implements Comparable<Task> {
 	public Task(int i, String task) {
 		this.date = i;
 		this.task = task;
+
+	public int compareTo(int t,Task a){
+		return t.Task.compareTo(a.date);
 	}
 
-	// compareToメソッドをオーバーライドする
-	// 日付で並び替えるため、LocalDateのcompareToを使う
-	
-	
-	public int compareTo(int a,int b){
-		
-		return a.Task.compareTo(b.Task);
-				//比較する内容を実装してください;
-        }
-			
-	}
 
+}
