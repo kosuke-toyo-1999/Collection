@@ -12,6 +12,15 @@ public class Task implements Comparable<Task> {
 		this.task = task;
 	}
 	
+	public LocalDate getdate() {
+		return date;
+	}
+	
+	public String gettask() {
+		return task;
+	}
+	
+	
 
 	public int compareTo(Task anotherdate) {
 

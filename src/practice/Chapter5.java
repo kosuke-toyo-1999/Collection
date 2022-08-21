@@ -16,7 +16,7 @@ public class Chapter5 {
         list.add(new Task(LocalDate.of(2021, 11, 9), "スクールの課題を解く"));
         Collections.sort(list);
         for (Task t : list) {
-            System.out.println(t.date + t.task);
+            System.out.println(t.getdate() + t.gettask());
         
         }
 	}
